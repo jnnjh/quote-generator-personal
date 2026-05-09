@@ -1,0 +1,58 @@
+/* App.css */
+body, html {
+  height: 100%;
+  background-image: url('assets/images/wraith.gif');
+  background-size: cover; /* Make the background image cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  text-align: center;
+}
+
+.advice-container {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker and slightly transparent background */
+  color: wheat;
+  box-shadow: 0 0 10px rgb(63, 1, 63), 0 0 20px 10px #6a006a; /* Red shadow with glow */
+}
+
+.button-container {
+  text-align: center; /* Center the button horizontally */
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #571068;
+  border-color: #0d0627;
+}
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #650265; /* Darker shade of purple on hover */
+  border-color: #660066;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+p {
+  color: wheat;
+  font-size: 30px;
+}
+
+.btn-custom {
+  color: wheat;
+  font-size: 1.5rem; /* Adjust the font size to make the button bigger */
+  padding: 14px 28px; /* Adjust padding to increase button size */
+}
+
+.pause-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.pause-button {
+  width: 80px;
+  min-width: 100px;
+}
+
