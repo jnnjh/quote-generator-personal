@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import wuji from './assets/audio/wuji.mp3';
 
-// 100 predefined messages of appreciation
 const messages = [
     "You are an amazing person!",
     "Your kindness is truly inspiring!",
@@ -15,11 +14,10 @@ const messages = [
     "You are a beacon of light for others.",
     "Your smile brightens up any room.",
     "You are appreciated more than you know.",
-    // Add 90 more messages...
 ];
 
 function App() {
-    const [advice, set_advice] = useState(messages[0]); // Default message
+    const [advice, set_advice] = useState(messages[0]); // -- default message
     const [songPlayed, setSongPlayed] = useState(false);
     const [audio] = useState(new Audio(wuji));
     const [isPlaying, setIsPlaying] = useState(false);
@@ -39,10 +37,11 @@ function App() {
     }, [songPlayed, isPlaying, audio]);
 
     function get_advice() {
-        // Pick a random message from the array
+        //-- will pick random message from the array...
         const randomIndex = Math.floor(Math.random() * messages.length);
         set_advice(messages[randomIndex]);
 
+        //-- makes sure that when you click get message, the song will play...
         if (!songPlayed) {
             setSongPlayed(true);
             setIsPlaying(true);
